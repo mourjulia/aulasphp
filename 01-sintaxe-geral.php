@@ -37,7 +37,7 @@
 
     echo "<h2>Programando <span class=\"exemplo\">PHP</span> </h2>";
 
-    $saudacao = "Olá!";    
+    $saudacao = "Olá!!";    
     ?>
 
     <script>
