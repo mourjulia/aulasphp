@@ -26,7 +26,7 @@ $usuario -> telefone = ["11-21350300", "11-98888-7777"];
     <h2>Saída de dados</h2>
     <p>Nome: <?=$usuario-> nome?></p>
     <p>Idade: <?=$usuario-> idade?>anos</p>
-    <p>Telefone: <?=$usuario-> telefones[1]?></p>
+    <p>Telefone: <?=$usuario-> telefone[1]?></p>
 
     <hr>
 
@@ -36,8 +36,21 @@ $usuario -> telefone = ["11-21350300", "11-98888-7777"];
 $arrayUsuario = (array) $usuario;
 ?>    
     
+    <h2>Convertendo (fazendo um casting) array associatico em objeto</h2>
+
+<?php
+//Array associativo com duas chaves (nome e sobrenome)
+$aluno = ["nome" => "Fulano", "sobrenome" => "dos Santos"];
+
+//convertendo array para objeto
+$objAluno = (object) $aluno;
+
+
+?>    
+
     <h3>Analisando o array gerado a partir de um obejto</h3>
     <pre><?=var_dump($arrayUsuario)?></pre>
+
 
 </body>
 
