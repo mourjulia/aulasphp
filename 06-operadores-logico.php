@@ -18,24 +18,40 @@ $faltas = 10;
 
 if($media >= 7 && $faltas <=10)
 {
-    echo "<p>Aprovado!</p>";
+?>
+
+    <p>Aprovado!</p>
+
+<?php
 } else {
-    echo "<p>Reprovado!</p>";
+?>
+
+    <p>Reprovado!</p>
+
+<?php
 }
 ?>
 
     <!-- o simbolo | é chamado de pipe -->
     <h2>|| (OU/OR)</h2>
     <p><i>Basta que apenas uma condição seja <b>VERDADEIRA/TRUE</b></i></p>
+
 <?php
 // dar desconto ao cliente que seja vip ou tenha cupom ou ambos
 $clienteVIP = true;  //valor/tipo lógico/boolean
 $temCupom = false;
 
-if ($clienteVIP || $temCupom) {
-    echo "<p>Desconto aplicado!</p>";  
+if ($clienteVIP || $temCupom) { 
+?>
+
+    <p>Desconto aplicado!</p>
+<?php    
 } else {
-   echo "<p>Sem desconto!</p>";
+?>
+
+    <p>Sem desconto!</p>
+
+<?php   
 }
 ?>    
 
@@ -48,10 +64,16 @@ if ($clienteVIP || $temCupom) {
 //caso contrário, exibir uma saudação
 
 $usuarioLogado = false;
-if (!$usuarioLogado) {
-    echo "<a href=\"login.php\">login<a>";
-} else {
-    echo "<span> Bem-vindo ao sistema!</span>"; 
+if (!$usuarioLogado) { 
+?>
+    <a href="login.php">login<a>
+
+<?php 
+} else { 
+?>
+    <span> Bem-vindo ao sistema!</span>
+
+<?php    
 }
 ?>
 
@@ -63,15 +85,22 @@ if (!$usuarioLogado) {
 - idade mínima de 18 anos
 - Ou estar acompanhando dos pais
 - E não estar bêbado */ 
-
 $idade = 20;
 $acompanhadoDosPais = true;
 $estarBebado = false;
 
 if ( ($idade >= 18 || $acompanhadoDosPais) && !$estarBebado) {
-    echo "<p>Entrada permitida</p>";
-} else {
-    echo "<p>Entrada negada</p>";
+?>
+
+    <p>Entrada permitida</p>
+
+<?php
+} else { 
+?>
+
+    <p>Entrada negada</p>
+
+<?php 
 }
 ?>
 
