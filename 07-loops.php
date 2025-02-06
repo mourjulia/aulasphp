@@ -99,6 +99,8 @@ for ($i = 0; $i < count($meses); $i++) {
     <p>Versão simplificada do loop for e bem mais fácil de usar com arrays
     e objetos</p>
 
+    <h3>Acessando array indexado/numérico</h3>
+
 <?php
 $alunos = ["Denis", "Paulo", "Heloisa"];
 
@@ -110,6 +112,28 @@ foreach( $alunos as $aluno ){
 <?php
 }
 ?>
+
+    <h3>Acessando array associativo</h3>
+
+<?php
+$clubes = [
+    "Corinthians" => "MERDA",
+    "Palmeiras" => "outra merda",
+    "São paulo" => "tão merda que é esquecido",
+    "santos" => "so velho torce"
+];
+
+foreach($clubes as $clube => $apelido){
+
+?>
+
+<p>O clube <?=$clube?> é conhecido como <?=$apelido?> </p>
+
+<?php
+}
+?>
+
+
 
 
 </body>
