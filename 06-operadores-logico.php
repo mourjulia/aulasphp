@@ -10,7 +10,21 @@
     <hr>
 
     <h2>&& (E/AND)</h2>
+    <p><i>todas as condições precisam ser <b>VERDADEIRAS/TRUE</b></i></p>
+<?php
+// avaliar um aluno mediante média e faltas
+$media = 9.5;
+$faltas = 10;
 
+if($media >= 7 && $faltas <=10)
+{
+    echo "<p>Aprovado!</p>";
+} else {
+    echo "<p>Reprovado!</p>";
+}
+?>
+
+    <!-- o simbolo | é chamado de pipe -->
     <h2>|| (OU/OR)</h2>
 
     <h2>! (NÃO/NOT)</h2>
