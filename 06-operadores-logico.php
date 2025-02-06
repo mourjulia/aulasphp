@@ -37,12 +37,43 @@ if ($clienteVIP || $temCupom) {
 } else {
    echo "<p>Sem desconto!</p>";
 }
-
-
 ?>    
 
     <h2>! (NÃO/NOT)</h2>
+    <p><i>É uma inversão de lógica: VERDADEIRO vira <b>FALSO</b>,
+    FALSO vira <b>VERDADEIRO</b></i></p>
 
+<?php
+// se o usuario NÃO ESTIVER logado, exibir o link/botão LOGIN.
+//caso contrário, exibir uma saudação
+
+$usuarioLogado = false;
+if (!$usuarioLogado) {
+    echo "<a href=\"login.php\">login<a>";
+} else {
+    echo "<span> Bem-vindo ao sistema!</span>"; 
+}
+?>
+
+    <hr>
+    <h2>Usanso os 3 operadores combinados para uma lógica mais elaborada</h2>
+
+<?php
+/*Para entrar em uma festa é necessãrio atender os seguintes critérios
+- idade mínima de 18 anos
+- Ou estar acompanhando dos pais
+- E não estar bêbado */ 
+
+$idade = 20;
+$acompanhadoDosPais = true;
+$estarBebado = false;
+
+if ( ($idade >= 18 || $acompanhadoDosPais) && !$estarBebado) {
+    echo "<p>Entrada permitida</p>";
+} else {
+    echo "<p>Entrada negada</p>";
+}
+?>
 
 </body>
 </html>
