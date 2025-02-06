@@ -133,7 +133,20 @@ foreach($clubes as $clube => $apelido){
 }
 ?>
 
+    <h3>Acessando objetos</h3>
+<?php
+$livro = new stdClass();
+$livro->titulo = "Senhor dos aneis";
+$livro->autor = "J.R.R";
+$livro->ano = 1954;
 
+foreach($livro as $propiedade => $valor){
+?>
+
+    <p> <?=$propiedade?> : <b><?=$valor?> </b></p>
+<?php
+}
+?>
 
 
 </body>
