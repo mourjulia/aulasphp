@@ -5,35 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Exercício 04 - Loop e estrutura de dados</title>
     <style>
-        
+        table {
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: pink;
+            color: white;
+        }
+
+        h2, h3{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <h2>Loop e estruturação de dados</h2>
-    
-<?php
-$linguagens = [
-    "HTML" => "Estruturação",
-    "CSS" => "Estilização",
-    "JS" => "Comportamentos",
-    "PHP" => "Desenvolvimento",
-    "SQL" => "Manipulação de dados",
-    "Java" => "Softwares"
-];
-?>
+    <h3>Linguagens</h3>
 
-<?php
-foreach ($linguagens as $linguagem => $frase) { 
-?>
-
-   <p><?=$linguagem?> : <?=$frase?></p>
-
-<?php
-}
-?>
-
-<table border="1">
-        <caption>LINGUAGENS</caption>
+    <table>
         <thead>
             <tr>
                 <th>ID</th>
@@ -41,43 +36,32 @@ foreach ($linguagens as $linguagem => $frase) {
                 <th>Descrição</th>
             </tr>
         </thead>
-
         <tbody>
-            <tr>
-                <td>01</td>
-                <td>HTML</td>
-                <td>Estruturação</td>
-            </tr>
+        <?php
+$linguagens = [
+    ["id" => 1, "nome" => "HTML", "descricao" => "Estruturação"],
+    ["id" => 2, "nome" => "CSS", "descricao" => "Estilos"],
+    ["id" => 3, "nome" => "JavaScript", "descricao" => "Comportamentos"],
+    ["id" => 4, "nome" => "SQL", "descricao" => "Manipulação de dados"],
+    ["id" => 5, "nome" => "Java", "descricao" => "Softwares e aplicativos"],
+    ["id" => 6, "nome" => "PHP", "descricao" => "Back-end"]
+];
+?>
 
+   
+        <?php foreach ($linguagens as $linguagem) { ?>
             <tr>
-                <td>02</td>
-                <td>CSS </td>
-                <td>Estilização</td>
+                <td><?= $linguagem['id'] ?></td>
+                <td><?= $linguagem['nome'] ?></td>
+                <td><?= $linguagem['descricao'] ?></td>
             </tr>
+        <?php } ?>
+  
+</table>
 
-            <tr>
-                <td>03</td>
-                <td>JS</td>
-                <td>Comportamentos</td>
-            </tr>
+            
 
-            <tr>
-                <td>04</td>
-                <td>PHP</td>
-                <td>Desenvolvimento</td>
-            </tr>
-
-            <tr>
-                <td>05</td>
-                <td>SQL</td>
-                <td>Manipulaçao de dados</td>
-            </tr>
-
-            <tr>
-                <td>06</td>
-                <td>JAVA</td>
-                <td>Softwares</td>
-            </tr>
+            
 
 </body>
 </html>
