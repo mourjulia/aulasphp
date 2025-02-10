@@ -57,6 +57,7 @@ for( $i = 1; $i <=10; $i++ ){
 }
 ?>
 
+<!-- COMEÇA AQUI -->
     <hr>
     <h2>Mini-exercicios</h2>
     <p>crie um array contendo os 12 meses do ano e usando um dos Loops
@@ -90,6 +91,7 @@ for ($i = 0; $i < count($meses); $i++) {
 <?php 
 } 
 ?>
+<!-- ACABA AQUII -->
 
     </ol>
 
