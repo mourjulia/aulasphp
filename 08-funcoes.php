@@ -80,7 +80,7 @@
         <?php
         } ?>
         <hr>
-        <h3>Função com parâmetros opcionais</h3>
+        <h2>Função com parâmetros opcionais</h2>
         <?php
         /* Parâmetros opcionais possuem algum tipo de atribuição com um valor alternativo, para o caspo de não serem passados na chamada da função. Obs.: sempre devem esta por último na relação de parâmetros da função*/
         function exibirSaudacao($mensagem, $pessoa = "")
