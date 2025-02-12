@@ -11,23 +11,24 @@
 <div class="container">
  
     <h1>Exercício 05: FUNÇÕES</h1>
-    <p></p>
+    <p>Trabalhando com a fun floats</p>
  
     <?php
-    $aluno = "Kelly";
+    $aluno = "Julia";
    
-    $calcularMediaDasNotas = function (float $nota1, float $nota2, float $nota3){
-        $mediaDasNotas = ($nota1 + $nota2+ $nota3) /3;
- 
+    $calcularMediaDasNotas = function (float $nota1, float $nota2, float $nota3) {
+        $mediaDasNotas = ($nota1 + $nota2 + $nota3) / 3;
         return $mediaDasNotas;
     };
- 
+
+    // Chamando a função com valores de exemplo
+    $media = $calcularMediaDasNotas(8.0, 7.0, 9.0);
     ?>
- 
-    <p>Média das notas do aluno <?= $aluno ?> foi: <?= $calcularMediaDasNotas ?></p>
-   
- 
+
+    <p>Média das notas do aluno <?= $aluno ?> foi: <?= number_format($media, 2, ',', '.') ?></p>
+    
 </div>
+   
  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

@@ -119,11 +119,11 @@
 
 
         /* Tipos comuns para uso com indução
-string  -> textos/caracteres em geral
-int     -> números inteiros
-float   -> números com casas decimais
-array   -> vetor/matriz
-object  -> obejto */
+            string  -> textos/caracteres em geral
+            int     -> números inteiros
+            float   -> números com casas decimais
+            array   -> vetor/matriz
+            object  -> obejto */
         ?>
         <p>Número 10: <?= verificarNegativo(10) ?></p>
         <p>Número -10: <span class="badge text-bg-danger"> <?= verificarNegativo(-10) ?> </span></p>
