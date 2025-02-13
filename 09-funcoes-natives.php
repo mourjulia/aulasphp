@@ -41,6 +41,20 @@
         <p><?=$fraseFeia?></p>
         <p><?=$fraseBonitinha?></p>
 
+        <hr>
+
+        <h3><code>explode()</code></h3>
+        <p>Transformar uma string em um array (separador)</p>
+        <?php
+        $textosLinguagens = "HTML,CSS,JS,PHP,SQL";
+        $arrayLinguagens = explode(",",$textosLinguagens);
+        ?>
+
+        <pre><?=var_dump($textosLinguagens)?></pre>
+        <pre><?=var_dump($arrayLinguagens)?></pre>
+
+        
+
 
     </div>
 
