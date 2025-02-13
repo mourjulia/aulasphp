@@ -152,7 +152,7 @@
         echo $ataquedeRaqui;
 
 
-        $ataqueSanitizado = filter_var($ataquedeRaqui, FILTER_SANITIZE_SPECIAL_CHARS)
+        $ataqueSanitizado = filter_var($ataquedeRaqui, FILTER_SANITIZE_SPECIAL_CHARS);
         echo $ataqueSanitizado
         ?>
 
