@@ -31,7 +31,7 @@
         <article>
             <h2>Título qualquer...</h2>
             <!-- Incluindo fragmentos de HTML -->
-            <?php include "textos.html";?>
+            <?php include "textos.php";?>
         </article>
         
     </div>
