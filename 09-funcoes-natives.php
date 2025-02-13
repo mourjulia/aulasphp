@@ -65,8 +65,51 @@
 
         <pre><?=var_dump($ArraysBandas)?></pre>
         <pre><?=var_dump($textoBandas)?></pre>
-    
+        <hr>
 
+        <h3><code>extract()</code></h3>
+        <p>Extrai  </p>
+        <?php
+        $aluno = [
+        "id" => 1,
+        "nome" => "Chapolin colorado",
+        "idade" => 25
+        ];
+
+        extract($aluno);
+        ?>
+
+        <ul>
+            <li>ID: <?=$id?></li>
+            <li>Nome: <?=$nome?></li>
+            <li>Idade: <?=$idade?> anos.</li>
+        </ul>
+        <hr>
+
+        <h3><code>array_sum()</code></h3>
+        <p>Somar valores de um array nnuméricos</p>
+
+        <?php
+        $valores = [10, 20, 50, 1000, 500];
+        $total = array_sum($valores);
+        ?>
+
+        <!-- Resultado -->
+        <p>Soma dos valores do array: <b><?=$total?></b></p>
+        <hr>
+
+        <h3><code>array_unique()</code></h3>
+        <p>Retorna um novo array com dados <b>únicos</b></p>
+
+        <?php
+        $produtos = ["TV", "Notebook", "TV", "Geladeira",
+        "Monitor", "Mouse", "Notebook", "Webcam"];
+        
+        $produtosUnicos = array_unique($produtos)
+        ?>
+
+        <pre><?=var_dump($produtos)?></pre>
+        <pre><?=var_dump($produtosUnicos)?></pre>
 
 
     </div>
