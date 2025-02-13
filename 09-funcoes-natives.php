@@ -149,13 +149,45 @@
             document.body.innerHTML = '<h1 style=background:yellow><marquee loop> Sou ráqui!</marquee></h1>'
         </script>"; 
         
-        echo $ataquedeRaqui;
+        // echo $ataquedeRaqui;
 
 
         $ataqueSanitizado = filter_var($ataquedeRaqui, FILTER_SANITIZE_SPECIAL_CHARS);
-        echo $ataqueSanitizado
+        echo $ataqueSanitizado;
+        ?>
+        <hr>
+
+        <h2>Segurança (criptografia de dados)</h2>
+        <h3>Algoritmos Recursos</h3>
+
+        <ul>
+            <li>MD5</li>
+            <li>SHA-1</li>
+            <li>SHA-256</li>
+            <li>password_hash() e password_verify()</li>
+        </ul>
+        
+        <?php
+        //plain text
+        $senhaTextoPuro = "123senac";
+
+        //MD5
+        $senhaCodificadaComMD5 = md5($senhaTextoPuro);
+        $senhaCodificadaComSHA1 = sha1($senhaTextoPuro);
+        $senhaCodificadaComSHA256 = hash('sha256', $senhaTextoPuro);
         ?>
 
+        <hr>
+        <p class="alert alert-warning">Métodos/algoritmos antigos (evite usar)</p>
+        <p>Senha (Texto Puro): <?=$senhaTextoPuro?></p>
+        <p>Senha (MD5): 
+            <?=$senhaCodificadaComMD5?> (<?=strlen($senhaCodificadaComMD5)?>)</p>  
+
+        <p>Senha (SHA-1)
+            <?=$senhaCodificadaComSHA1?> (<?=strlen($senhaCodificadaComSHA1)?>)</p>
+
+        <p>Senha (SHA-256)
+        <?=$senhaCodificadaComSHA256?> (<?=strlen($senhaCodificadaComSHA256)?>)</p>
 
     </div>
 
