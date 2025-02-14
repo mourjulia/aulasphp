@@ -1,18 +1,33 @@
 </main>
-<footer>
-    <p>Site criado para curso Téc. Informática para Internet</p>
-</footer>
 
 <?php
+//date_default_timezone_set("America/Sao_Paulo");
 
-date_default_timezone_set("America/Sao_Paulo");
+//$datadehoje = date("d/m/Y"); //DEFININDO A DATA AUTOMATICAMENTE
+//$hora = date("H:i"); //DEFININDO O HORÁRIO
 
-$datadehoje = date("d/m/Y"); //DEFININDO A DATA AUTOMATICAMENTE
-$hora = date("H:i"); //DEFININDO O HORÁRIO
+//echo "<p><b>Data de Hoje:</b> $datadehoje<?p>";
+//echo "<p><b>Horário:</b> $hora<?p>"
+//?> 
 
-echo "<p><b>Data de Hoje:</b> $datadehoje<?p>";
-echo "<p><b>Horário:</b> $hora<?p>"
+<?php
+// Definir o locale como 'pt_BR' (português do Brasil)
+setlocale(LC_TIME, 'pt_BR.UTF-8');
+
+// Criar um objeto DateTime
+$data = new DateTime();
+
+// Usar IntlDateFormatter para formatar a data por extenso
+$fmt = new IntlDateFormatter('pt_BR', IntlDateFormatter::LONG, IntlDateFormatter::NONE);
+$data_extenso = $fmt->format($data);
+
+//echo $data_extenso;
 ?>
+
+<footer>
+    <p class="text-center">Site criado para curso Téc. Informática para Internet</p>
+    <p class="text-center"><time><?=$data_extenso?></time></p>
+</footer>
 
 </div>
 
