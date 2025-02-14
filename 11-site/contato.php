@@ -1,6 +1,6 @@
 <?php include "components/cabecalho.php" ?>
 
-
+<h2>Entre em contato conosco</h2>
 <form action="" method="post">
 
 <div class="mb-3">
