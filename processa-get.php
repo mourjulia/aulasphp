@@ -11,6 +11,7 @@
    <div class="container">
         <h1>Processamento usando GET</h1>
         <hr>
+        <pre><?=var_dump($_GET)?></pre>
         
    </div> 
 
