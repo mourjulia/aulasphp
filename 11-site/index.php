@@ -1,4 +1,4 @@
-<?php include "cabecalho.php" ?>
+<?php include "components/cabecalho.php" ?>
             <h2>Bem-vindo ao site Exemplo</h2>
             <p>Esta é a primeira parte do nosso site.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -6,4 +6,4 @@
             quos quae, et pariatur maiores nesciunt, explicabo iusto corporis,
             eos soluta delectus tempora iste.</p>
 
-<?php include "rodape.php" ?>
+<?php include "components/rodape.php" ?>

@@ -1,4 +1,4 @@
-<?php include "cabecalho.php" ?>
+<?php include "components/cabecalho.php" ?>
             <h2>Página de Dúvidas</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, officia.
             Velit neque corporis vitae nam harum qui repudiandae, optio molestias ex id,
@@ -14,4 +14,4 @@
                 <summary>Os cursos são gratuitos?</summary>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </details>
-<?php include "rodape.php" ?>
+<?php include "components/rodape.php" ?>
