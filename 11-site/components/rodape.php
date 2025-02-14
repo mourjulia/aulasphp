@@ -3,6 +3,17 @@
     <p>Site criado para curso Téc. Informática para Internet</p>
 </footer>
 
+<?php
+
+date_default_timezone_set("America/Sao_Paulo");
+
+$datadehoje = date("d/m/Y"); //DEFININDO A DATA AUTOMATICAMENTE
+$hora = date("H:i"); //DEFININDO O HORÁRIO
+
+echo "<p><b>Data de Hoje:</b> $datadehoje<?p>";
+echo "<p><b>Horário:</b> $hora<?p>"
+?>
+
 </div>
 
 

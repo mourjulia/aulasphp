@@ -1,4 +1,5 @@
 <?php include "components/cabecalho.php" ?>
+
             <h2>Bem-vindo ao site Exemplo</h2>
             <p>Esta é a primeira parte do nosso site.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
