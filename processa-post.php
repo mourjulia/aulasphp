@@ -9,13 +9,13 @@
 </head>
 <body>
    <div class="container">
-        <h1>Processamento usando GET</h1>
+        <h1>Processamento usando POST</h1>
         <hr>
-        <pre><?=var_dump($_GET)?></pre>
+        <pre><?=var_dump($_POST)?></pre>
         
    </div> 
 
-   <form action="processa-get.php" method="get" >
+   <form action="processa-post.php" method="get" >
     <div class="mb-3">
         <label for="nome" class="form-label">Nome:</label>
         <input class="form-control" type="text" name="nome" id="nome">
